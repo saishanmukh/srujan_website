@@ -33,8 +33,6 @@ exports.volcano_detail_id = async function(req, res) {
             if (err) {
                 return console.error(err.message);
             }
-
-            console.log(row);
             if(isEmptyObject(row)){
                 res.status(404);
                 res.send(`{"error": "Volcano ${req.params.id} not found"}`);
@@ -75,8 +73,6 @@ exports.volcano_update_id = async function(req, res) {
             if (err) {
                 return console.error(err.message);
             }
-
-            console.log(row);
             if(isEmptyObject(row)){
                 res.status(404);
                 res.send(`{"error": "Volcano ${req.params.id} not found"}`);
@@ -106,8 +102,6 @@ exports.volcano_delete_id = async function(req, res) {
             if (err) {
                 return console.error(err.message);
             }
-
-            console.log(row);
             if(isEmptyObject(row)){
                 res.status(404);
                 res.send(`{"error": "Volcano ${req.params.id} not found"}`);
